@@ -1,0 +1,36 @@
+.seccionSuperior {
+    display: flex;
+}
+
+.grupo {
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+    font-family: verdana, arial, helvetica;
+}
+
+.grupoCheckBox {
+    display: flex;
+    padding: 15px 15px 15px 15px;
+    font-family: verdana, arial, helvetica;
+}
+
+.seccionDatosCliente {
+    background-color: #55ccff;
+}
+
+.seccionPedidos {
+    background-color: #40ccbb;
+}
+
+.datoIncorrecto {
+    color: red;
+}
+
+.datoCorrecto {
+    color: green;
+}
+
+#img_inicial {
+    width: 600pt;
+    height: 300pt;
+}

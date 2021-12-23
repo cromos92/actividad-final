@@ -1,0 +1,80 @@
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/estilos.css">
+    <script src="jquery-3.6.0.min.js"></script>
+ </head>
+
+ <body>
+    <div class="seccionSuperior">
+        <img src="static/images/pizza.jpg" id="img_inicial" alt="imagen de Pizza">
+        <h1>Pizzas Full Stack</h1>
+    </div>
+    <form action="http://localhost:5000/pizza" method="POST">
+        <div class="seccionDatosCliente">
+            <h2>Datos del cliente</h2>
+            <div class="grupo">
+                <label id="labelCliente" for="nombreCliente">Nombre:</label>
+                <input type="text" name="nombreCliente" id="nombreCliente" placeholder="ingresar nombre cliente..">
+            </div>
+
+            <div class="grupo">
+                <label id='labelApellido' for="apellidosCliente">Apellidos:</label>
+                <input type="text" name="apellidosCliente" id="apellidosCliente" placeholder="ingresar apellidos cliente..">
+            </div>
+            <div class="grupo">
+                <label for="fechaNacimiento">Fecha Nacimiento:</label>
+                <input type="date" id="fechaNacimiento">
+            </div>
+            <div class="grupo">
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono" placeholder="ingresar Telefono cliente..">
+            </div>
+            <div class="grupo">
+                <label for="direccionPostal">Direccion:</label>
+                <br>
+                <textarea id="direccionPostal" rows="10" cols="50" placeholder="ingresar Direccion Postal cliente.."> </textarea>
+
+            </div>
+        </div>
+        <div class="seccionPedidos">
+            <h2>Datos del Pedido</h2>
+            <select name="tamano" id="tamano">
+                <option value="XXL">XXL</option>
+                <option value="L">Grande</option>
+                <option value="M">Mediana</option>
+                <option value="S">Pequeña</option>
+                </select>
+                <span id="resultado_tamano"></span>
+               
+            <div class="grupo">
+                <span>Ingredientes</span>
+            </div>
+            <div class="grupo">
+                <label for="jamon">Jamon</label>
+                <input type="checkbox" name='jamones' id="jamon" value='Jamon'>
+            </div>
+            <div class="grupo">
+                <label for="champinon">Champiñones</label>
+                <input type="checkbox" name='Champiñones' id='champinon' value='Champiñones'>
+            </div>
+
+            <div class="grupo">
+                <label for="Pepperoni">Pepperoni</label>
+                <input type="checkbox" name='Pepperonis' id='Pepperoni' value='Pepperoni'>
+            </div>
+            <div class="grupo">
+                <label for="aceituna">Aceitunas</label>
+                <input type="checkbox" name='aceitunas' id="aceituna" value='Aceitunas'>
+            </div>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="script.js"></script>
+ </body>
+
+</html>
